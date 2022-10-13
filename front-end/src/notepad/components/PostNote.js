@@ -29,7 +29,7 @@ function PostNote(props) {
         <>
             <DataContext.Provider  value={props}>
                 <div className="">
-                <div className='mt-4 ml-5 mr-5 p-8 bg-blue-500 shadow-lg font-sm rounded-lg hover:bg-blue-600 '>
+                <div className='border-4 border-white-900 border-solid mt-4 ml-5 mr-5 p-8 bg-blue-500 shadow-lg font-sm rounded-lg hover:bg-blue-600 '>
                     <h3 class="mb-3 text-xl font-semibold tracking-tight text-white ">หัวข้อ:{title}</h3>
                     <div className="break-all">
 
@@ -37,9 +37,10 @@ function PostNote(props) {
                         
 
                     </div>
-                    <div className="flex justify-end mt-10">
-                    <p class="leading-normal text-gray-100 mr-10 ">บันทึกล่าสุด:{date.slice(0,10)}</p>
-                        <div className="mr-10 hover:text-gray-50 mt-1" onClick={clickedUp}>
+                    <div className="flex justify-end mt-10 text-gray-100 mr-10">บันทึกล่าสุด:{date.slice(0,10)}
+                        {/* <div><p class="leading-normal text-gray-100 mr-10 ">บันทึกล่าสุด:{date.slice(0,10)}</p></div> */}
+                    
+                        <div className="mr-5 hover:text-gray-50 mt-1 ml-5" onClick={clickedUp}>
                             <RiPencilFill />
                         </div>
 

@@ -30,11 +30,11 @@ const EditNotes = ({ setUpdate, }) => {
 
     return (
 
-        <div className="bg-zinc-200 fixed inset-0 z-50">
+        <div className="fixed inset-0 z-50">
 
             <div className="flex h-screen justify-center items-center">
 
-                <div className="bg-white py-7 px-40 border-4 border-green-500 rounded-xl background-image: url('')">
+                <div className="bg-white py-5 px-10 border-4 border-white-500 rounded-xl background-image: url('')">
 
                     <div className="">
 
@@ -46,8 +46,8 @@ const EditNotes = ({ setUpdate, }) => {
 
                     <div className='flex justify-center'>
 
-                        <button onClick={PostUpdate} className=" rounded px-4 py-2 text-white mt-10  bg-green-400 hover:bg-green-500">Update</button>
-                        <button onClick={handleCancelClick} className=" rounded px-4 py-2 text-white mt-10 ml-2  bg-red-400 hover:bg-red-500">Close</button>
+                        <button onClick={PostUpdate} className=" rounded px-4 py-2 text-white mt-5  bg-green-400 hover:bg-green-500">บันทึก</button>
+                        <button onClick={handleCancelClick} className=" rounded px-4 py-2 text-white mt-5 ml-2  bg-red-400 hover:bg-red-500">ปิดหน้าต่าง</button>
 
                     </div>
 
